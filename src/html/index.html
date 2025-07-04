@@ -21,8 +21,9 @@
 	</center>
 	
 	<script>
-		document.getElementById("link").href = "refresher://" + window.location.pathname + window.location.search;
-		window.location.href = "refresher://" + window.location.pathname + window.location.search;
+		const link = "refresher://" + window.location.pathname.substr(1) + window.location.search;
+		document.getElementById("link").href = link;
+		window.location.href = link;
 	</script>
 </body>
 </html>
