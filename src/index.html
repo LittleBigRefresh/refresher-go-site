@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Redirecting...</title>
-  <script>
-    window.location.href = "refresher://" + window.location.pathname + window.location.search;
-  </script>
+	<title>Refresher</title>
 </head>
 <body>
-  <p>Launching Refresher...</p>
-  <noscript>
-    <p>Please enable JavaScript to launch the app.</p>
-  </noscript>
+	<center>
+		<div>
+			<h1>Automatically redirecting...</h1>
+			
+			<h3>
+				<a id="link">Open Refresher manually</a>
+			</h3>
+			
+			<br/>
+			
+			<p><i>
+				Don't have Refresher installed? Download it <a href="https://github.com/LittleBigRefresh/Refresher/releases/latest">here</a>.
+			</i></p>
+		</div>
+	</center>
+	
+	<script>
+		document.getElementById("link").href = "refresher://" + window.location.pathname + window.location.search;
+		window.location.href = "refresher://" + window.location.pathname + window.location.search;
+	</script>
 </body>
 </html>
